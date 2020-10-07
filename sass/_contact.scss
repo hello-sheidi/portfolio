@@ -1,0 +1,167 @@
+.contact {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-tertiary, 0.9),
+    rgba($color-tertiary-dark, 0.9)
+  );
+  min-height: 105vh;
+  display: grid;
+  grid-template-rows: auto min-content min-content 1fr;
+  grid-template-columns: 1fr 55vw 1fr 20vw;
+
+  &__heading {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: start;
+
+    color: $color-dark-2;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
+
+  &__tab {
+    grid-column: 4/5;
+    grid-row: 1/-1;
+
+    background-image: linear-gradient(
+        rgba($color-tertiary, 0.5),
+        rgba($color-tertiary, 0.5)
+      ),
+      url(../img/daisy.jpg);
+    background-size: cover;
+  }
+}
+
+.address {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-bottom: 3rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  &__medium {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: 2.3rem;
+      color: $color-dark-2;
+      font-weight: 300;
+      margin-right: 2rem;
+
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    fill: currentColor;
+    margin-right: 2.5rem;
+  }
+}
+
+.form {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background-color: rgba($color-white, 0.3);
+  width: 100%;
+  height: min-content;
+  color: $color-dark-2;
+  border-radius: 2px;
+  box-shadow: 0 1rem 2rem (rgba($color-black, 0.4));
+
+  padding: 5rem 7rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+
+  grid-column-gap: 10rem;
+  grid-row-gap: 1rem;
+
+  &__group {
+    &--message {
+      grid-column: 1/-1;
+    }
+  }
+
+  &__input {
+    font-size: 2rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: rgba($color-white, 0.6);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 100%;
+    display: block;
+    transition: all 0.3s;
+
+    &--message {
+      height: 20vh;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem (rgba($color-black, 0.1));
+      border-bottom: 3px solid $color-tertiary-dark;
+
+      &:invalid {
+        border-bottom: 3px solid #db8181;
+      }
+    }
+
+    &::placeholder {
+      color: $color-dark-2;
+      font-weight: 300;
+    }
+  }
+
+  &__label {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $color-dark-2;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+
+  &__btn {
+    border: none;
+    border-radius: 10rem;
+    display: inline-block;
+
+    background-color: $color-dark-2;
+    color: rgba($color-white, 0.9);
+    cursor: pointer;
+
+    justify-self: start;
+    align-self: start;
+
+    &:hover {
+      background-color: rgba($color-dark, 0.8);
+      box-shadow: 0 1rem 1.5rem rgba($color-black, 0.2);
+
+      transform: translateY(-2px);
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+      box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+
+      transform: translateY(-1px);
+    }
+  }
+}

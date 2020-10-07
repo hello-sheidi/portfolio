@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favi.png" />
+
+    <title>Joanna Depowska &mdash; Frontend Developer</title>
+  </head>
+  <body class="container">
+    <header class="header" id="home">
+      <nav id="navbar" class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">home</a></li>
+          <li class="nav__item"><a href="#section-skills" class="nav__link">skills</a></li>
+          <li class="nav__item"><a href="#section-projects" class="nav__link">projects</a></li>
+          <li class="nav__item"><a href="#section-about" class="nav__link">about</a></li>
+          <li class="nav__item"><a href="#section-contact" class="nav__link">contact</a></li>
+        </ul>
+      </nav>
+      <div class="name">
+        <svg viewBox="0 0 200 240">
+          <path
+            class="name__path"
+            id="curve"
+            d="M 75 200 Q 25 175 25 125 Q 25 100 50 75 Q 125 50 150 75 Q 175 100 175 125 Q 175 175 125 200  "
+          />
+          <text class="name__text">
+            <textPath xlink:href="#curve">Joanna Depowska</textPath>
+          </text>
+        </svg>
+      </div>
+      <div class="header__text-box">
+        <h1 class="header__text">Front-end Developer</h1>
+        <div class="header__explore">Explore</div>
+        <div class="btn-box">
+          <a href="#" class="btn btn-primary">
+            <span>Download CV</span>
+            <svg class="btn-primary__icon">
+              <use xlink:href="img/sprite.svg#icon-arrow-down2"></use>
+            </svg>
+          </a>
+
+          <a href="#" class="btn btn-secondary">View my projects</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="skills" id="section-skills">
+      <h2 class="heading-2 skills__heading">Skills & Technologies</h2>
+
+      <div class="cards">
+        <div class="card card--1">
+          <div class="card__img card__img--1">&nbsp;</div>
+          <h5 class="card__name">Backend</h5>
+          <ul class="card__tech">
+            <li class="card__item">Node.js</li>
+            <li class="card__item">Express.js</li>
+            <li class="card__item">NPM</li>
+            <li class="card__item">WebAPI</li>
+          </ul>
+        </div>
+
+        <div class="card card--2">
+          <div class="card__img card__img--2">&nbsp;</div>
+          <h5 class="card__name">Frontend</h5>
+          <ul class="card__tech">
+            <li class="card__item">HTML5</li>
+            <li class="card__item">CSS | SASS</li>
+            <li class="card__item">Javascript ES6</li>
+            <li class="card__item">Responsive Web Design</li>
+          </ul>
+        </div>
+
+        <div class="card card--3">
+          <div class="card__img card__img--3">&nbsp;</div>
+          <h5 class="card__name">Interpersonal</h5>
+          <ul class="card__tech">
+            <li class="card__item">Analytical Mind</li>
+            <li class="card__item">Fast Learner</li>
+            <li class="card__item">Team Player</li>
+            <li class="card__item">Creative Thinker</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="section-projects">
+      <h2 class="heading-2 projects__heading">Projects</h2>
+      <div class="projects__box">
+        <div class="project project--1">
+          <img
+            src="./img/screen-natours.png"
+            alt="Project picture"
+            class="project__img"
+          />
+          <h5 class="project__title">Natours</h5>
+          <p class="project__description">
+            Frankfurter tenderloin hamburger pastrami venison meatball beef ribs
+            ball tip corned beef turkey turducken. Swine drumstick landjaeger
+            sirloin burgdoggen pork belly alcatra shankle turducken chicken pork
+            chop tenderloin shank strip steak andouille.
+          </p>
+          <div class="tech">
+            <svg class="tech__icon">
+              <use xlink:href="img/sprite.svg#icon-html5"></use>
+            </svg>
+            <p class="tech__label">HTML5</p>
+
+            <svg class="tech__icon">
+              <use xlink:href="img/sprite.svg#icon-css3"></use>
+            </svg>
+            <p class="tech__label">CSS3</p>
+
+            <svg class="tech__icon">
+              <use xlink:href="img/sprite.svg#icon-sass"></use>
+            </svg>
+            <p class="tech__label">SASS</p>
+
+          </div>
+          <div class="project__buttons">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/hello-sheidi/natours" class="btn btn-primary project__buttons--1"> 
+              <span>GitHub</span> 
+              <svg class="btn-primary__icon">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
+              </svg>
+            </a>
+            </a>
+
+            <a href="#" class="btn btn-secondary">Live Version</a>
+          </div>
+        </div>
+
+        <div class="project project--2">
+          <img
+            src="./img/screen-portfolio.png"
+            alt="Project picture"
+            class="project__img"
+          />
+          <h5 class="project__title">Portfolio (this page)</h5>
+          <p class="project__description">
+            Frankfurter tenderloin hamburger pastrami venison meatball beef ribs
+            ball tip corned beef turkey turducken. Swine drumstick landjaeger
+            sirloin burgdoggen pork belly alcatra shankle turducken chicken pork
+            chop tenderloin shank strip steak andouille.
+          </p>
+          <div class="tech">
+            <svg class="tech__icon">
+              <use xlink:href="img/sprite.svg#icon-html5"></use>
+            </svg>
+            <p class="tech__label">HTML5</p>
+
+            <svg class="tech__icon">
+              <use xlink:href="img/sprite.svg#icon-css3"></use>
+            </svg>
+            <p class="tech__label">CSS3</p>
+
+            <svg class="tech__icon">
+              <use xlink:href="img/sprite.svg#icon-sass"></use>
+            </svg>
+            <p class="tech__label">SASS</p>
+
+            <svg class="tech__icon">
+              <use xlink:href="img/sprite.svg#icon-javascript"></use>
+            </svg>
+            <p class="tech__label">Javascript</p>
+
+          </div>
+          <div class="project__buttons">
+            <a href="#" class="btn btn-primary project__buttons--1">      
+              <span>GitHub</span> 
+              <svg class="btn-primary__icon">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
+              </svg> </a>
+
+            <a href="#" class="btn btn-secondary project__buttons--2"
+              >Live Version</a
+            >
+          </div>
+        </div>
+
+        <div class="project project--3">
+          <img
+            src="./img/screen-movie.png"
+            alt="Project picture"
+            class="project__img"
+          />
+          <h5 class="project__title">Movie Comparison</h5>
+          <p class="project__description">
+            Frankfurter tenderloin hamburger pastrami venison meatball beef ribs
+            ball tip corned beef turkey turducken. Swine drumstick landjaeger
+            sirloin burgdoggen pork belly alcatra shankle.
+          </p>
+          <div class="tech">
+            <svg class="tech__icon">
+              <use xlink:href="img/sprite.svg#icon-html5"></use>
+            </svg>
+            <p class="tech__label">HTML5</p>
+
+            <svg class="tech__icon">
+              <use xlink:href="img/sprite.svg#icon-css3"></use>
+            </svg>
+            <p class="tech__label">CSS3</p>
+
+            <svg class="tech__icon">
+              <use xlink:href="img/sprite.svg#icon-sass"></use>
+            </svg>
+            <p class="tech__label">SASS</p>
+
+            <svg class="tech__icon">
+              <use xlink:href="img/sprite.svg#icon-javascript"></use>
+            </svg>
+            <p class="tech__label">Javascript</p>
+
+          </div>
+          <div class="project__buttons">
+            <a href="#" class="btn btn-primary project__buttons--1">      
+              <span>GitHub</span> 
+              <svg class="btn-primary__icon">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
+              </svg> </a>
+
+            <a href="#" class="btn btn-secondary">Live Version</a>
+          </div>
+        </div>
+
+        <div class="project project--4">
+          <img
+            src="./img/screen-ecom.png"
+            alt="Project picture"
+            class="project__img"
+          />
+          <h5 class="project__title">Ecommerce Shop</h5>
+          <p class="project__description">
+            Frankfurter tenderloin hamburger pastrami venison meatball beef ribs
+            ball tip corned beef turkey turducken. Swine drumstick landjaeger
+            sirloin burgdoggen pork belly alcatra shankle turducken chicken pork
+            chop tenderloin shank strip steak andouille.
+          </p>
+          <div class="tech">
+            <svg class="tech__icon">
+              <use xlink:href="img/sprite.svg#icon-html5"></use>
+            </svg>
+            <p class="tech__label">HTML5</p>
+
+            <svg class="tech__icon">
+              <use xlink:href="img/sprite.svg#icon-css3"></use>
+            </svg>
+            <p class="tech__label">CSS3</p>
+
+            <svg class="tech__icon">
+              <use xlink:href="img/sprite.svg#icon-sass"></use>
+            </svg>
+            <p class="tech__label">SASS</p>
+
+            <svg class="tech__icon">
+              <use xlink:href="img/sprite.svg#icon-javascript"></use>
+            </svg>
+            <p class="tech__label">Javascript</p>
+
+            <svg class="tech__icon">
+              <use xlink:href="img/sprite.svg#icon-node-dot-js"></use>
+            </svg>
+            <p class="tech__label">Node.js</p>
+
+          </div>
+          <div class="project__buttons">
+            <a href="#" class="btn btn-primary project__buttons--1">      
+              <span>GitHub</span> 
+              <svg class="btn-primary__icon">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
+              </svg> </a>
+
+            <a href="#" class="btn btn-secondary">Live Version</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="section-about">
+      <div class="description">
+        <h2 class="heading-2 description__heading">About Me</h2>
+
+        <div class="description__box description__box--1">
+          <p class="description__text">
+            Computer Science Student with professional experience in managing
+            applications in international company.
+          </p>
+        </div>
+        <div class="description__box description__box--2">
+          <p class="description__text">
+            Coding Geek, Design Freak, User Experience Adept seeking for new
+            challenges.
+          </p>
+        </div>
+        <div class="description__box description__box--3">
+          <p class="description__text">
+            Goal-oriented Multitasker, Analytical Thinker with social soul.
+          </p>
+        </div>
+      </div>
+
+      <img src="./img/joanna.png" alt="My photo" class="about__photo" />
+
+      <div class="about__shape"></div>
+    </section>
+
+    <section class="contact" id="section-contact">
+      <h2 class="heading-2 contact__heading">Contact Me</h2>
+
+      <div class="address">
+        <a href="tel:58793164050" class="address__medium">
+          <svg class="address__icon">
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
+          </svg>
+          <span>+48793164050</span>
+        </a>
+
+        <a href="mailto: joannaa.depowska@gmail.com" class="address__medium">
+          <svg class="address__icon">
+            <use xlink:href="img/sprite.svg#icon-envelop"></use>
+          </svg>
+          <span>joannaa.depowska@gmail.com</span>
+        </a>
+      </div>
+
+      <form action="POST" class="form">
+        <div class="form__group form__group--name">
+          <input
+            type="text"
+            class="form__input"
+            placeholder="Name"
+            id="name"
+            required
+          />
+          <label for="name" class="form__label">Name</label>
+        </div>
+
+        <div class="form__group form__group--email">
+          <input
+            type="email"
+            class="form__input"
+            placeholder="Email"
+            id="email"
+            required
+          />
+          <label for="email" class="form__label">Email</label>
+        </div>
+
+        <div class="form__group form__group--message">
+          <input
+            type="text"
+            class="form__input form__input--message"
+            placeholder="Message..."
+            id="message"
+            required
+          />
+          <label for="message" class="form__label">Message</label>
+        </div>
+
+        <button class="btn form__btn">Send Message</button>
+      </form>
+
+      <div class="contact__tab">&nbsp;</div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__copyright">&copy; Copyright 2020 by Joanna Depowska</p>
+      <div class="footer__box">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/joanna-depowska-6a9503191/" class="footer__item">
+          <svg class="footer__icon">
+            <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://wa.me/48793164050" class="footer__item">
+          <svg class="footer__icon">
+            <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+          </svg>
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/hello-sheidi?tab=repositories" class="footer__item">
+          <svg class="footer__icon">
+            <use xlink:href="img/sprite.svg#icon-github"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

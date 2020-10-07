@@ -1,0 +1,67 @@
+// FONT VARIABLES
+$font-primary: "Inconsolata", monospace;
+
+// COLOR VARIABLES
+
+$color-light: #cad2c5;
+
+$color-primary: #84a98c;
+$color-primary-dark: #52796f;
+
+$color-secondary: #a99584;
+$color-secondary-dark: #8c7c6d;
+
+$color-tertiary: #848da9;
+$color-tertiary-dark: #6b738a;
+
+$color-bottle-light: #547a70;
+$color-bottle: #354f52;
+
+$color-dark: #2f3e46;
+$color-dark-2: #263238;
+
+$color-black: rgb(0, 0, 0);
+$color-white: #fff;
+
+//MEDIA QUERY MANAGER
+
+/*
+$breakpoint argument choices:
+- phone <600px  ---> 37.5em
+- tab-port 600-900px --> 56.25em
+- tab-land 900-1200px   ---> 75em    
+  //project designed for 1200-1800px
+- bg-desktop >1800px --> 112.5em
+1em = 16px
+
+*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+
+  font-family: $font-primary;
+  font-weight: 300;
+  color: $color-dark;
+  line-height: 1.6;
+
+  background-color: rgba($color-light, 0.5);
+
+  min-height: 100vh;
+}
+
+::selection {
+  background-color: $color-dark;
+  color: $color-light;
+}
