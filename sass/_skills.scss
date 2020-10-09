@@ -1,5 +1,5 @@
 .skills {
-  transition: all 0.3s;
+  // transition: all 0.3s;
   min-height: 105vh;
 
   &__heading {
@@ -101,15 +101,14 @@
 
   &__item {
     padding: 2rem 3rem;
-    animation: fadeIn 1s;
 
     &:last-child {
       margin-bottom: 2rem;
     }
   }
 
-  &:hover {
-    transform: translateY(-1rem);
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
-  }
+  // &:hover {
+  //   transform: translateY(-1rem);
+  //   box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+  // }
 }

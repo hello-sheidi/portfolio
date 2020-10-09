@@ -49,9 +49,14 @@
     grid-row: 1/-1;
     align-self: center;
     justify-self: center;
+    transition: all 0.5s;
 
     width: 22vw;
     filter: drop-shadow(0 1rem 1rem rgba($color-black, 0.5));
+  }
+  &__img:hover {
+    filter: brightness(0);
+    transform: rotateY(20deg) scaleX(0.98);
   }
 
   &__title {
