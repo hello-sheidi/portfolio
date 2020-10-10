@@ -54,10 +54,6 @@
     width: 22vw;
     filter: drop-shadow(0 1rem 1rem rgba($color-black, 0.5));
   }
-  &__img:hover {
-    filter: brightness(0);
-    transform: rotateY(20deg) scaleX(0.98);
-  }
 
   &__title {
     grid-column: 2/3;

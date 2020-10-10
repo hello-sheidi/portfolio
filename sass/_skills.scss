@@ -1,5 +1,5 @@
 .skills {
-  // transition: all 0.3s;
+  transition: all 0.3s;
   min-height: 105vh;
 
   &__heading {
@@ -107,8 +107,7 @@
     }
   }
 
-  // &:hover {
-  //   transform: translateY(-1rem);
-  //   box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
-  // }
+  &:hover {
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+  }
 }

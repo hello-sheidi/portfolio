@@ -15,8 +15,6 @@
     <title>Joanna Depowska &mdash; Frontend Developer</title>
   </head>
   <body>
-  <div class="container">
-  
     <header class="header" id="section-home">
       <nav id="navbar" class="nav">
         <ul class="nav__list">
@@ -59,7 +57,7 @@
       <h2 class="heading-2 skills__heading">Skills & Technologies</h2>
 
       <div class="cards">
-        <div class="card card--1" >
+        <div class="card card--1" data-aos="flip-right" data-aos-delay=100 data-aos-duration=1000>
           <div class="card__img card__img--1">&nbsp;</div>
           <h5 class="card__name">Backend</h5>
           <ul class="card__tech">
@@ -70,7 +68,7 @@
           </ul>
         </div>
 
-        <div class="card card--2">
+        <div class="card card--2" data-aos="flip-right" data-aos-delay=250 data-aos-duration=1000>
           <div class="card__img card__img--2">&nbsp;</div>
           <h5 class="card__name">Frontend</h5>
           <ul class="card__tech">
@@ -81,7 +79,7 @@
           </ul>
         </div>
 
-        <div class="card card--3">
+        <div class="card card--3" data-aos="flip-right" data-aos-delay=400 data-aos-duration=1000>
           <div class="card__img card__img--3">&nbsp;</div>
           <h5 class="card__name">Interpersonal</h5>
           <ul class="card__tech">
@@ -97,7 +95,7 @@
     <section class="projects" id="section-projects">
       <h2 class="heading-2 projects__heading">Projects</h2>
       <div class="projects__box">
-        <div class="project project--1">
+        <div class="project project--1" data-aos="fade-right" data-aos-delay="100"  data-aos-duration="1000">
           <img
             src="./img/screen-natours.png"
             alt="Project picture"
@@ -137,7 +135,7 @@
           </div>
         </div>
 
-        <div class="project project--2">
+        <div class="project project--2" data-aos="fade-left"  data-aos-delay="100"  data-aos-duration="1000">
           <img
             src="./img/screen-portfolio.png"
             alt="Project picture"
@@ -182,7 +180,7 @@
           </div>
         </div>
 
-        <div class="project project--3">
+        <div class="project project--3" data-aos="fade-right"  data-aos-delay="100"  data-aos-duration="1000">
           <img
             src="./img/screen-movie.png"
             alt="Project picture"
@@ -225,7 +223,7 @@
           </div>
         </div>
 
-        <div class="project project--4">
+        <div class="project project--4" data-aos="fade-left"  data-aos-delay="100"  data-aos-duration="1000">
           <img
             src="./img/screen-ecom.png"
             alt="Project picture"
@@ -279,26 +277,26 @@
       <div class="description">
         <h2 class="heading-2 description__heading">About Me</h2>
 
-        <div class="description__box description__box--1">
+        <div class="description__box description__box--1" data-aos="zoom-in" data-aos-delay="100" data-aos-anchor-placement="center">
           <p class="description__text">
             Computer Science Student with professional experience in managing
             applications in international company.
           </p>
         </div>
-        <div class="description__box description__box--2">
+        <div class="description__box description__box--2" data-aos="zoom-in" data-aos-delay="200" data-aos-anchor-placement="center">
           <p class="description__text">
             Coding Geek, Design Freak, User Experience Adept seeking for new
             challenges.
           </p>
         </div>
-        <div class="description__box description__box--3">
+        <div class="description__box description__box--3" data-aos="zoom-in" data-aos-delay="300" data-aos-anchor-placement="center">
           <p class="description__text">
             Goal-oriented Multitasker, Analytical Thinker with social soul.
           </p>
         </div>
       </div>
 
-      <img src="./img/joanna.png" alt="My photo" class="about__photo" />
+      <img src="./img/joanna.png" alt="My photo" class="about__photo"/>
 
       <div class="about__shape"></div>
     </section>
@@ -322,7 +320,7 @@
         </a>
       </div>
 
-      <form action="POST" class="form">
+      <form action="POST" class="form" data-aos="fade-up">
         <div class="form__group form__group--name">
           <input
             type="text"
@@ -359,6 +357,15 @@
         <button class="btn form__btn">Send Message</button>
       </form>
 
+      <div class="contact-nav">
+        <a href="#section-home" class="contact-nav__link" data-aos="slide-up"  data-aos-anchor-placement="bottom-bottom"  data-aos-duration="1000">
+          <svg class="contact-nav__icon">
+            <use xlink:href="img/sprite.svg#icon-angle-double-up"></use>
+          </svg>
+        </a>
+      </div>
+     
+
       <div class="contact__tab">&nbsp;</div>
     </section>
  
@@ -382,8 +389,6 @@
         </a>
       </div>
     </footer>
-
-  </div>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="./app.js"></script>

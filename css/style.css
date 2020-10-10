@@ -16,7 +16,9 @@ $breakpoint argument choices:
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity; }
 
 body {
   box-sizing: border-box;
@@ -25,31 +27,22 @@ body {
   color: #2f3e46;
   line-height: 1.6;
   background-color: rgba(202, 210, 197, 0.5);
-  height: 100vh;
-  overflow: hidden; }
-
-::selection {
-  background-color: #2f3e46;
-  color: #cad2c5; }
-
-.container {
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory; }
-  .container::-webkit-scrollbar {
+  height: 100vh; }
+  body::-webkit-scrollbar {
     width: 1.2rem; }
-  .container::-webkit-scrollbar-track {
-    background: #cad2c5;
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
-  .container::-webkit-scrollbar-thumb {
+  body::-webkit-scrollbar-track {
+    background: #cad2c5; }
+  body::-webkit-scrollbar-thumb {
     background-color: #2f3e46;
     border-radius: 2px;
     height: 40vh; }
 
-[id^="section-"] {
+[id^="section"] {
   scroll-snap-align: start; }
+
+::selection {
+  background-color: #2f3e46;
+  color: #cad2c5; }
 
 .about {
   min-height: 110vh;
@@ -206,6 +199,26 @@ body {
       outline: none;
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
       transform: translateY(-1px); }
+
+.contact-nav {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+  .contact-nav__icon {
+    width: 7rem;
+    height: 7rem;
+    fill: #263238;
+    animation: pulsate 1s infinite; }
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.05) translateY(-0.5rem); }
+  100% {
+    transform: scale(1); } }
 
 .header {
   height: 100vh;
@@ -390,9 +403,6 @@ body {
     transition: all 0.5s;
     width: 22vw;
     filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.5)); }
-  .project__img:hover {
-    filter: brightness(0);
-    transform: rotateY(20deg) scaleX(0.98); }
   .project__title {
     grid-column: 2/3;
     font-size: 3.5rem;
@@ -439,6 +449,7 @@ body {
     text-transform: uppercase; }
 
 .skills {
+  transition: all 0.3s;
   min-height: 105vh; }
   .skills__heading {
     margin-top: 5rem;
@@ -499,6 +510,8 @@ body {
     padding: 2rem 3rem; }
     .card__item:last-child {
       margin-bottom: 2rem; }
+  .card:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
 
 .heading-2 {
   font-size: 8rem;

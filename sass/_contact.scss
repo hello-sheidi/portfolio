@@ -165,3 +165,33 @@
     }
   }
 }
+
+.contact-nav {
+  grid-column: 3/4;
+  grid-row: 3/4;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  &__icon {
+    width: 7rem;
+    height: 7rem;
+    fill: $color-dark-2;
+    animation: pulsate 1s infinite;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05) translateY(-0.5rem);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
