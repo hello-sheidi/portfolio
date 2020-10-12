@@ -183,6 +183,7 @@ body {
     visibility: hidden;
     transform: translateY(-4rem); }
   .form__btn {
+    grid-column: 1/2;
     border: none;
     border-radius: 10rem;
     display: inline-block;

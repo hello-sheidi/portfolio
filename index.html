@@ -41,7 +41,7 @@
         <h1 class="header__text">Front-end Developer</h1>
         <div class="header__explore">Explore</div>
         <div class="btn-box">
-          <a href="#" class="btn btn-primary">
+          <a href="files/CV - Joanna Depowska.pdf" download class="btn btn-primary" >
             <span>Download CV</span>
             <svg class="btn-primary__icon">
               <use xlink:href="img/sprite.svg#icon-arrow-down2"></use>
@@ -320,10 +320,11 @@
         </a>
       </div>
 
-      <form action="POST" class="form" data-aos="fade-up">
+      <form action="POST" class="form" data-netlify="true" data-aos="fade-up">
         <div class="form__group form__group--name">
           <input
             type="text"
+            name="name"
             class="form__input"
             placeholder="Name"
             id="name"
@@ -335,6 +336,7 @@
         <div class="form__group form__group--email">
           <input
             type="email"
+            name="email"
             class="form__input"
             placeholder="Email"
             id="email"
@@ -346,12 +348,16 @@
         <div class="form__group form__group--message">
           <input
             type="text"
+            name="message"
             class="form__input form__input--message"
             placeholder="Message..."
             id="message"
             required
           />
           <label for="message" class="form__label">Message</label>
+        </div>
+        <div class="field">
+          <div data-netlify-recaptcha="true"></div>
         </div>
 
         <button class="btn form__btn">Send Message</button>

@@ -138,6 +138,7 @@
   }
 
   &__btn {
+    grid-column: 1/2;
     border: none;
     border-radius: 10rem;
     display: inline-block;
