@@ -24,6 +24,16 @@ $color-black: rgb(0, 0, 0);
 $color-white: #fff;
 
 //MEDIA QUERY MANAGER
+//1em = 16px
+$bp-big-desktop: 112.5em;
+
+$bp-tab-land: 75em; //1200px
+$bp-tab-land-small: 68.75em; //1100px
+$bp-tab-port: 56.25em; //900px
+$bp-tab-port-small: 50em; //800px
+$bp-tab-small: 43.75em; //700px
+$bp-phone: 37.5em; //600px
+$bp-phone-small: 28.125em; //450px
 
 /*
 $breakpoint argument choices:
@@ -45,9 +55,17 @@ $breakpoint argument choices:
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; // 1rem = 10px
   scroll-behavior: smooth;
   scroll-snap-type: y proximity;
+
+  @media only screen and (max-width: $bp-tab-land) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-phone-small) {
+    font-size: 40%;
+  }
 }
 
 body {

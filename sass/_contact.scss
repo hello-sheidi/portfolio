@@ -9,6 +9,15 @@
   grid-template-rows: auto min-content min-content 1fr;
   grid-template-columns: 1fr 55vw 1fr 20vw;
 
+  @media only screen and (max-width: $bp-tab-port) {
+    grid-template-columns: 1fr 70vw 1fr;
+    min-height: max-content;
+  }
+
+  @media only screen and (max-width: $bp-tab-small) {
+    grid-template-columns: 1fr 80vw 1fr;
+  }
+
   &__heading {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -29,6 +38,10 @@
       ),
       url(../img/daisy.jpg);
     background-size: cover;
+
+    @media only screen and (max-width: $bp-tab-port) {
+      display: none;
+    }
   }
 }
 
@@ -39,6 +52,10 @@
 
   display: flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: $bp-phone) {
+    flex-direction: column;
+  }
 
   &__medium {
     &,
@@ -52,6 +69,16 @@
 
       display: flex;
       align-items: center;
+
+      @media only screen and (max-width: $bp-tab-port-small) {
+        font-size: 2rem;
+      }
+    }
+
+    &:not(:last-child) {
+      @media only screen and (max-width: $bp-phone) {
+        margin-bottom: 2rem;
+      }
     }
   }
 
@@ -60,6 +87,11 @@
     height: 3.5rem;
     fill: currentColor;
     margin-right: 2.5rem;
+
+    @media only screen and (max-width: $bp-tab-port-small) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   }
 }
 
@@ -74,6 +106,7 @@
   box-shadow: 0 1rem 2rem (rgba($color-black, 0.4));
 
   padding: 5rem 7rem;
+  margin-bottom: 10rem;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -81,6 +114,18 @@
 
   grid-column-gap: 10rem;
   grid-row-gap: 1rem;
+
+  @media only screen and (max-width: $bp-tab-small) {
+    padding: 4rem 5rem;
+  }
+
+  @media only screen and (max-width: $bp-tab-port-small) {
+    grid-column-gap: 5rem;
+  }
+
+  @media only screen and (max-width: $bp-phone) {
+    grid-template-columns: 1fr;
+  }
 
   &__group {
     &--message {
@@ -174,6 +219,10 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+
+  @media only screen and (max-width: $bp-phone) {
+    grid-column: 2/3;
+  }
 
   &__icon {
     width: 7rem;
