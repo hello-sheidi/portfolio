@@ -324,7 +324,7 @@
         </a>
       </div>
 
-      <form action="POST" class="form" data-netlify="true" data-aos="fade-up">
+      <form action="POST" class="form" id="contact-form" data-netlify="true" data-aos="fade-up">
         <div class="form__group form__group--name">
           <input
             type="text"
@@ -359,10 +359,9 @@
           >
           </textarea>
           <label for="message" class="form__label">Message</label>
-
         </div>
 
-        <button class="btn form__btn">Send Message</button>
+        <button type="submit" form="contact-form" class="btn form__btn">Send Message</button>
       </form>
 
       <div class="contact-nav">
