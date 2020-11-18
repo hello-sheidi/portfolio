@@ -520,10 +520,10 @@ body {
   .project__img {
     grid-column: 1/2;
     grid-row: 1/-1;
+    width: 22vw;
     align-self: center;
     justify-self: center;
     transition: all 0.5s;
-    width: 22vw;
     filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.5)); }
     @media only screen and (max-width: 43.75em) {
       .project__img {
@@ -659,7 +659,8 @@ body {
     font-size: 2rem;
     text-align: center; }
   .card__item {
-    padding: 2rem 3rem; }
+    padding: 2rem 3rem;
+    color: #263238; }
     .card__item:last-child {
       margin-bottom: 2rem; }
   .card:hover {
